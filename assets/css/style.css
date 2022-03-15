@@ -1,0 +1,60 @@
+:root {
+    --mivariable: red;
+
+}
+
+#layout {
+    border: 3px solid black;
+    padding: 5px;
+    display: flex;
+    /*flex-wrap: wrap;
+    flex-direction: row;*/
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    height: 500px;
+    align-items: center;
+}
+
+body {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.caja {
+    border: 3px solid black;
+    padding: 5px;
+    margin: 10px;
+    color: white;
+    flex-grow: 1;
+}
+
+.rojo {
+    margin-top: calc(500px / 2);
+    order: 4;
+    background-color: var(--mivariable);
+}
+
+.verde {
+    align-self: flex-start;
+    margin-top: calc(500px / 4);
+    order: 2;
+    background-color: green;
+}
+
+.azul {
+    align-self: start;
+    order: 1;
+    background-color: blue;
+}
+
+.morada {
+    background: blueviolet;
+    order: 5;
+    align-self: flex-end;
+}
+
+
+.naranja {
+    order: 3;
+    background-color: orange;
+}
